@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxifierProfile version="102" platform="Windows" product_id="0" product_minver="400">
+	<Options>
+		<Resolve>
+			<AutoModeDetection enabled="false" />
+			<ViaProxy enabled="true" />
+			<ExclusionList OnlyFromListMode="false">%ComputerName%; localhost; *.local</ExclusionList>
+			<DnsUdpMode>0</DnsUdpMode>
+		</Resolve>
+		<Encryption mode="disabled" />
+		<ConnectionLoopDetection enabled="true" resolve="true" />
+		<ProcessOtherUsers enabled="false" />
+		<ProcessServices enabled="true" />
+		<HandleDirectConnections enabled="false" />
+		<HttpProxiesSupport enabled="false" />
+	</Options>
+	<ProxyList>
+		<Proxy id="100" type="SOCKS5">
+			<Options>48</Options>
+			<Port>1080</Port>
+			<Address>127.0.0.1</Address>
+		</Proxy>
+		<Proxy id="101" type="SOCKS5">
+			<Options>48</Options>
+			<Port>1081</Port>
+			<Address>127.0.0.1</Address>
+		</Proxy>
+	</ProxyList>
+	<ChainList />
+	<RuleList>
+		<Rule enabled="true">
+			<Action type="Direct" />
+			<Targets>localhost; 127.0.0.1; %ComputerName%; 192.168.8.*; 192.168.1*</Targets>
+			<Name>Localhost</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Direct" />
+			<Applications>bvssh.exe; co2surfer.exe; a-dev1412.exe; inject.exe; "HTTP Proxy Injector.exe"; PLink.exe; ssh.exe; HPI_Remake.exe; tstunnel.exe; stnlc.exe; plink.exe; klink.exe; simple-tunnel.exe; simple-tunnel-ultimate.exe</Applications>
+			<Name>Exclutions</Name>
+		</Rule>
+		<Rule enabled="true">
+			<Action type="Proxy">100</Action>
+			<Name>Default</Name>
+		</Rule>
+	</RuleList>
+</ProxifierProfile>

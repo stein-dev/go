@@ -1,0 +1,18 @@
+{
+	"InjectorSettings": {
+		"ListenPort": "9898",
+		"Payload": "HTTP//1.1 200 [crlf]Host: wattpad.com [lf][lf][lf]",
+		"ProxyHost": "192.53.175.31",
+		"ProxyPort": "9991",
+		"Timer": 0
+	},
+	"SshSettings": {
+		"Host": "asia-ph.pptpvpn.net",
+		"Port": "22",
+		"Username": "pptpvpn.net-stein001",
+		"Password": "stein001",
+		"Compress": false,
+		"Tunnel": "plink",
+		"Note": "Created by @pigscanfly"
+	}
+}
