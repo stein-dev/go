@@ -1,0 +1,13 @@
+{
+	"InjectorSettings": {
+		"ListenPort": "9191",
+		"Payload": "HTTP//1.1 200 [lf]Host: www.xbox.com [lf][lf][lf]",
+		"ProxyHost": "128.199.84.242",
+		"ProxyPort": "9998",
+		"Username": "",
+		"Password": "",
+		"Timer": 50,
+		"FileName": "config/udphub.ovpn",
+		"AuthFileName": "config/udphub.auth"
+	}
+}

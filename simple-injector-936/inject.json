@@ -1,0 +1,9 @@
+{
+	"InjectorSettings": {
+		"ListenPort": "9001",
+		"Payload": "HTTP//1.1 200 [lf]Host: www.xbox.com [lf][lf][lf][lf][lf]",
+		"ProxyHost": "139.162.47.149",
+		"ProxyPort": "7776",
+		"Timer": 55
+	}
+}
